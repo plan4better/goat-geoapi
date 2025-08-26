@@ -12,10 +12,10 @@ jobs:
         uses: actions/checkout@v4
 
       - name: 📥 Checkout PR
-        uses: goat-community/.github/.github/actions/pr-git-checkout
+        uses: plan4better/.github/.github/actions/pr-git-checkout
 
       - name: 📥 Poetry install
-        uses: goat-community/.github/.github/actions/poetry-install
+        uses: plan4better/.github/.github/actions/poetry-install
         with:
           cwd: ${{ github.workspace }}/app/api
 
